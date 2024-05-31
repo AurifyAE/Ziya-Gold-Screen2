@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ziya Gold</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    body {
+        margin: 0;
+        height: 100vh;
+    }
+
+    /* Style the video: 100% width and height to cover the entire window */
+    #myVideo {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+    }
+
+    /* Add some content at the bottom of the video/page */
+    .content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: fixed;
+        left: 0;
+        width: 24%;
+        padding: 20px;
+        margin-top: 17%;
+        margin-left: 8%;
+    }
+
+    img {
+        position: fixed;
+        left: 0;
+        width: 280px;
+        padding: 20px;
+        margin-top: 2%;
+        margin-left: 15%;
+    }
+
+    .content .row div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 15px;
+        align-items: center;
+        /* background: rgba(255, 255, 255, 0.5);
+        padding: 30px 70px;
+        border-radius: 20px; */
+    }
+
+
+    .container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container .glass {
+        position: relative;
+        width: 240px;
+        height: 260px;
+        background: linear-gradient(#fff2, transparent);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 25px 25px rgba(0, 0, 0, 0.25);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.5s;
+        border-radius: 10px;
+        backdrop-filter: blur(10px);
+    }
+
+    .container .glass p{
+        position: absolute;
+        top: 10%;
+        font-size: 2.2vw;
+        color: #fff;
+        font-weight: 600;
+    }
+
+    .container .glass::before {
+        content: attr(data-text);
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 60px;
+        background: rgba(255, 255, 255, 0.05);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-size: 35px;
+    }
+
+
+    .radio-canada-big-text {
+        font-family: "Radio Canada Big", sans-serif;
+        font-optical-sizing: auto;
+        font-size: 4vw;
+        font-weight: 600;
+        font-style: normal;
+    }
+</style>
+
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="./assests/video/1112112_Engagement_Boyfriend_Romantic_1920x1080.mp4" type="video/mp4">
+    </video>
+
+    <div class="content">
+        <div class="row">
+            <div class="container">
+                <div data-text="18k" class="glass">
+                    <p>217.25</p>
+                </div>
+            </div>
+            <div class="container">
+                <div data-text="24k" class="glass">
+                    <p>282.75</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="container">
+                <div data-text="21k" class="glass">
+                    <p>253.50</p>
+                </div>
+            </div>
+            <div class="container">
+                <div data-text="22K" class="glass">
+                    <p>261.75</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="row">
+            <div>
+                <p class="radio-canada-big-text">217.25</p>
+                <span class="radio-canada-big-text">18k</span>
+            </div>
+            <div>
+                <p class="radio-canada-big-text">282.75</p>
+                <span class="radio-canada-big-text">24k</span>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <p class="radio-canada-big-text">253.50</p>
+                <span class="radio-canada-big-text">21k</span>
+            </div>
+            <div>
+                <p class="radio-canada-big-text">261.75</p>
+                <span class="radio-canada-big-text">22k</span>
+            </div>
+        </div> -->
+    </div>
+
+    <div>
+        <img src="./assests/images/ziya.png" alt="" srcset="">
+    </div>
+</body>
+
+</html>
